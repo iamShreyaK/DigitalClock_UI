@@ -1,0 +1,19 @@
+body{
+    background: rgb(11, 0, 0);
+}
+.clockdata{
+    display: flex;
+    justify-content: center;
+    background: wheat;
+}
+
+#clock{
+    font-size: 80px;
+    width: 700px;
+    margin: 200px;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 20px;
+    flex-direction: row;
+    align-items: center;
+}
