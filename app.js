@@ -15,16 +15,16 @@ function showTime(){
         if(hour > 12) hour -= 12;
         am_pm = "PM";
     }
-    else if(hour ==0){
+    else if(hour == 0){
         hr =12;
         am_pm = "AM"
     }
 
     hour = hour < 10? "0" + hour : hour;
     min = min < 10? "0" + min : min;
-    sec = hour < 10? "0" + sec : sec;
+    sec = sec < 10? "0" + sec : sec;
 
-    let currentTime = hour + ":" + min + ":" + sec + ":" + am_pm;
+    let currentTime = hour + ":" + min + ":" + sec + am_pm;
 
     //displaying time 
     document.getElementById("clock").innerHTML = currentTime;
